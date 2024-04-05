@@ -1,0 +1,4 @@
+select `BillingCountry`,
+	count(`InvoiceId`) as result
+from chinook.invoice
+group by 1 order by 2 desc;
